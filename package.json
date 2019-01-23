@@ -1,0 +1,22 @@
+{
+  "name": "full-stack-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acecoder93/Full-Stack-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acecoder93/Full-Stack-Project/issues"
+  },
+  "homepage": "https://github.com/acecoder93/Full-Stack-Project#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
