@@ -60,6 +60,14 @@ nav{
     text-decoration: none;
 }
 
+#searchBar{
+    width:400px; 
+    opacity: 1; 
+    font-family: 'Dosis', sans-serif;
+    background-color: transparent;
+    color: white
+}
+
 /* BELOW FONTS FOR REFERENCE <- */
   /* h1 {
     font-family: 'Dosis', sans-serif;
@@ -81,3 +89,5 @@ p {
     line-height: 23px;
     margin: 0 0 23px 0;
     } */
+
+    
