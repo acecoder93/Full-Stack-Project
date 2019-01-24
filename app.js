@@ -1,7 +1,6 @@
 // Require Express
 const express = require('express');
 const app = express();
-
 // API AXIOS - npm install axios
 const axios = require ('axios');
 
@@ -26,10 +25,12 @@ const axios = require ('axios');
 //         console.log(err)
 //     });
 
-
+// EJS setup
 app.set('view engine','ejs');
 app.set('views','views')
 
+
+// Routes
 app.use(require('./routes/index'))
 
 // Server Listening on Port 5000
