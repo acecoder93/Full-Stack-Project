@@ -5,7 +5,7 @@ const app = express();
 const axios = require('axios');
 
 // Require database
-const db = require('./models');
+// const db = require('./models');
 
 // Middleware
 app.use(express.static('public'));
