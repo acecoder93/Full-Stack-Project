@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 // API AXIOS - npm install axios
-const axios = require ('axios');
+const axios = require('axios');
 
 
 // API Call
@@ -19,12 +19,23 @@ const axios = require ('axios');
 // var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
 // var query = 'kobe+bryant';
 // axios.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&type=video&key=' + youtubeAPIkey)
-//     .then((res)=>{
-//         console.log(res.data.items)
+//     .then((res) => {
+//         let output = `<div class = video> Video </div>`;
+//         let videoID = res.data.items[0].id.videoId;
+
+//         output += `
+//             <div class = "embedded-video">
+//             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoID}" 
+//             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+//             </div>
+//         `
+//         var x = document.getElementsByClassName("test");
+//         x.innerHTML = output
 //     })
-//     .catch((err)=>{
+//     .catch((err) => {
 //         console.log(err)
 //     });
+
 
 // Stock Information -  alphavantage API key
 // var alphaAPI = 'DSORZL6DK0TYSLAP';
@@ -45,14 +56,14 @@ const axios = require ('axios');
 
 
 // EJS setup
-app.set('view engine','ejs');
-app.set('views','views')
+app.set('view engine', 'ejs');
+app.set('views', 'views')
 
 
 // Routes
 app.use(require('./routes/index'))
 
 // Server Listening on Port 5000
-app.listen(5000, ()=>{
+app.listen(5000, () => {
     console.log('Listening on port 5000');
 });
