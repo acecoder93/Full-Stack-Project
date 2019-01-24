@@ -4,6 +4,8 @@ const app = express();
 // API AXIOS - npm install axios
 const axios = require('axios');
 
+app.use(express.static('public'))
+
 // API Call
 // News API
 // axios.get('https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=6afdb077c1994657ab9284882c5c296e')
