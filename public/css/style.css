@@ -81,17 +81,6 @@ nav{
 
 }
 
-#submit-button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    width: 75%;
-    opacity: 1; 
-    font-family: 'Dosis', sans-serif;
-    background-color: transparent;
-    color: black;
-}
 /* BELOW FONTS FOR REFERENCE <- */
   /* h1 {
     font-family: 'Dosis', sans-serif;
@@ -114,4 +103,55 @@ p {
     margin: 0 0 23px 0;
     } */
 
-    
+/* THIS IS FOR THE SEARCH BAR */
+.search-container{
+width: 490px;
+display: block;
+margin: 0 auto;
+}
+input#search-bar{
+margin: 0 auto;
+margin-top: 20px;
+width: 100%;
+height: 45px;
+padding: 0 20px;
+font-size: 1rem;
+border: 1px solid #D0CFCE;
+outline: none;
+background-color: transparent;
+}
+input#search-bar:focus{
+font-family: 'Dosis', sans-serif;
+margin: 0 auto;
+margin-top: 20px;
+width: 100%;
+height: 45px;
+padding: 0 20px;
+font-size: 1rem;
+border: 1px solid #008ABF;
+transition: 0.35s ease;
+color: rgb(255, 255, 255);
+background-color: transparent;        
+}
+.search-icon{
+position: relative;
+float: right;
+width: 75px;
+height: 75px;
+top: -62px;
+right: -17px;
+}
+::placeholder{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    opacity: 0.9;
+}
+/* END OF SEARCH BAR STUFF */
+
+.display-3{
+    margin-top: 30px;
+    font-family: 'Dosis', sans-serif;
+    color:white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+}
