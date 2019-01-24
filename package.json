@@ -20,6 +20,10 @@
     "axios": "^0.18.0",
     "document-ready": "^2.0.2",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "pg-promise": "^8.5.5",
+    "sequelize": "^4.42.0"
   }
 }
