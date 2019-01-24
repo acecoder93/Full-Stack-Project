@@ -5,6 +5,8 @@ const app = express();
 app.set('view engine','ejs');
 app.set('views','views')
 
+app.use(express.static('public'));
+
 app.use(require('./routes/index'))
 
 // Server Listening on Port 5000
