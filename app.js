@@ -59,6 +59,8 @@ const axios = require('axios');
 app.set('view engine', 'ejs');
 app.set('views', 'views')
 
+app.use(express.static('public'));
+
 
 // Routes
 app.use(require('./routes/index'))
