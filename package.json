@@ -17,7 +17,14 @@
   },
   "homepage": "https://github.com/acecoder93/Full-Stack-Project#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "pg-promise": "^8.5.5",
+    "request": "^2.88.0"
   }
 }
