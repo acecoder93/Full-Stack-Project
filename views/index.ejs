@@ -12,13 +12,18 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/style.css">
   </head>
+  <script src="../app.js"></script>
   <body>
     
     <!-- Navbar lives in Partials. Woop! -->
     <%- include partials/navbar.ejs %>
-
-    <div id="test" style = "height: 500px; width: 500px; background-color: black"></div>
     <%- include partials/searchBar.ejs %>
+
+    <div id="youtube-video">
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/<%=videoID%>" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
 
 
 
@@ -28,7 +33,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="/js/index.js"></script>
-    <script>
+ 
+    <!-- <script>
 
     $(document).ready(()=>{
 
@@ -54,6 +60,6 @@
             console.log(err)
         });
       })
-    </script>
+    </script> -->
   </body>
 </html>
