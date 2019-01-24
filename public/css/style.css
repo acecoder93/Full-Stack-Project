@@ -68,6 +68,30 @@ nav{
     color: white
 }
 
+/* Feedback-form Styling */
+#feedback-form{
+    margin-top: 3%;
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    opacity: .8;
+
+}
+
+#submit-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 75%;
+    opacity: 1; 
+    font-family: 'Dosis', sans-serif;
+    background-color: transparent;
+    color: black;
+}
 /* BELOW FONTS FOR REFERENCE <- */
   /* h1 {
     font-family: 'Dosis', sans-serif;
