@@ -4,6 +4,9 @@ const app = express();
 // API AXIOS - npm install axios
 const axios = require('axios');
 
+// Require database
+const db = require('./models');
+
 // Middleware
 app.use(express.static('public'));
 
