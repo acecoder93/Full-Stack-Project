@@ -27,11 +27,10 @@ const axios = require ('axios');
 //     });
 
 
+app.set('view engine','ejs');
+app.set('views','views')
 
-
-app.get('/', (req,res)=>{
-    res.send('homepage');
-})
+app.use(require('./routes/index'))
 
 // Server Listening on Port 5000
 app.listen(5000, ()=>{
