@@ -59,7 +59,8 @@ app.use(express.static('public'));
 
 
 // Routes
-app.use(require('./routes/index'))
+app.use(require('./routes/index'));
+app.use(require('./routes/feedback'));
 
 // Server Listening on Port 5000
 app.listen(5000, () => {
