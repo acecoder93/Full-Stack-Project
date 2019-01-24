@@ -5,33 +5,62 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
-
+nav{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.644),transparent);
+}
 .nav-item,.navbar-nav {
     font-family: 'Dosis', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 400;
     color: white;
     background-color: transparent;
+    text-shadow: 1px 1px black;
 }
+
 .nav-item:hover,.navbar-nav:hover {
     font-family: 'Dosis', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 400;
     color:yellow;
+    text-shadow: 1px 1px black;
     background-color: transparent;
 }
 
 .navbar-brand{
         color: white;
+        text-shadow: 1px 1px black;
         background-color: transparent;
 }
 .navbar-brand:hover{
         color: yellow;
+        text-shadow: 1px 1px black;
         background-color: transparent;
 }
+#navDate,#navTime,#navTemp{
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px black;
+    background-color: transparent;
+    display: inline;
+    margin-right: 10px;
+}
+#navDate:hover,#navTime:hover,#navTemp:hover{
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: yellow;
+    text-shadow: 1px 1px black;
+    background-color: transparent;
+    display: inline;
+    margin-right: 10px;
+}
+#navStats{
+    text-decoration: none;
+}
 
- 
-
+/* BELOW FONTS FOR REFERENCE <- */
   /* h1 {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
