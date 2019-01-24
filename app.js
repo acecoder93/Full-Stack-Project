@@ -4,7 +4,6 @@ const app = express();
 // API AXIOS - npm install axios
 const axios = require('axios');
 
-
 // API Call
 // News API
 // axios.get('https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=6afdb077c1994657ab9284882c5c296e')
@@ -36,7 +35,6 @@ const axios = require('axios');
 //         console.log(err)
 //     });
 
-
 // Stock Information -  alphavantage API key
 // var alphaAPI = 'DSORZL6DK0TYSLAP';
 // var company = 'MSFT'
@@ -51,8 +49,6 @@ const axios = require('axios');
 // .catch((err)=>{
 //     console.log(err);
 // });
-
-
 
 
 // EJS setup
