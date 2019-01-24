@@ -4,7 +4,8 @@ const app = express();
 // API AXIOS - npm install axios
 const axios = require('axios');
 
-app.use(express.static('public'))
+// Middleware
+app.use(express.static('public'));
 
 // API Call
 // News API
@@ -17,6 +18,7 @@ app.use(express.static('public'))
 //     });
 
 // Youtube API - Setup URL
+
 // var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
 // var query = 'kobe+bryant';
 // axios.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&type=video&key=' + youtubeAPIkey)
@@ -24,18 +26,21 @@ app.use(express.static('public'))
 //         let output = `<div class = video> Video </div>`;
 //         let videoID = res.data.items[0].id.videoId;
 
+//         console.log(videoID);
+
 //         output += `
-//             <div class = "embedded-video">
+//             <div id="youtube-video">
 //             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoID}" 
 //             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 //             </div>
 //         `
-//         var x = document.getElementsByClassName("test");
+//         var x = document.getElementById("test");
 //         x.innerHTML = output
 //     })
 //     .catch((err) => {
 //         console.log(err)
 //     });
+
 
 // Stock Information -  alphavantage API key
 // var alphaAPI = 'DSORZL6DK0TYSLAP';
