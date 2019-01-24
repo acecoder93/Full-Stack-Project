@@ -4,7 +4,34 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
+
+.nav-item,.navbar-nav {
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+}
+.nav-item:hover,.navbar-nav:hover {
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color:yellow;
+    background-color: transparent;
+}
+
+.navbar-brand{
+        color: white;
+        background-color: transparent;
+}
+.navbar-brand:hover{
+        color: yellow;
+        background-color: transparent;
+}
+
+ 
+
   /* h1 {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
