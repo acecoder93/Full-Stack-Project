@@ -4,6 +4,7 @@ const app = express();
 // API AXIOS - npm install axios
 const axios = require ('axios');
 
+
 // API Call
 // News API
 // axios.get('https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=6afdb077c1994657ab9284882c5c296e')
@@ -24,6 +25,24 @@ const axios = require ('axios');
 //     .catch((err)=>{
 //         console.log(err)
 //     });
+
+// Stock Information -  alphavantage API key
+// var alphaAPI = 'DSORZL6DK0TYSLAP';
+// var company = 'MSFT'
+// var alphaLink = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' + company + '&apikey=' + alphaAPI;
+
+// axios.get(alphaLink)
+// .then((res)=>{
+//     console.log(res.data['Global Quote']['01. symbol']);
+//     console.log(res.data['Global Quote']['05. price']);
+//     console.log(res.data['Global Quote']['10. change percent']);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
+
+
+
 
 // EJS setup
 app.set('view engine','ejs');
