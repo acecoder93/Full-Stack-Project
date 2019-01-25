@@ -6,22 +6,6 @@ const db = require('./models/');
 // Middleware
 app.use(express.static('public'));
 
-// API Call
-// Stock Information -  alphavantage API key
-// var alphaAPI = 'DSORZL6DK0TYSLAP';
-// var company = 'MSFT'
-// var alphaLink = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=' + company + '&apikey=' + alphaAPI;
-
-// axios.get(alphaLink)
-// .then((res)=>{
-//     console.log(res.data['Global Quote']['01. symbol']);
-//     console.log(res.data['Global Quote']['05. price']);
-//     console.log(res.data['Global Quote']['10. change percent']);
-// })
-// .catch((err)=>{
-//     console.log(err);
-// });
-
 
 // Passport Setup
 var LocalStrategy = require('passport-local').Strategy;
@@ -113,10 +97,10 @@ passport.use(new LocalStrategy((username, password, done)=>{
 
 }))
 
-//  (Dashboard)
-app.get('/dashboard', (req, res)=>{
+//  Access Control
+app.get('/', (req, res)=>{
     if(!req.isAuthenticated()){
-        res.redirect('/login');
+        res.redirect('/register');
         return;
     }
     res.send('you are authenticated and you can see this page')
@@ -143,6 +127,8 @@ passport.deserializeUser((id, done)=>{
 // Routes
 app.use(require('./routes/index'));
 app.use(require('./routes/feedback'));
+app.use(require('./routes/login'));
+app.use(require('./routes/register'));
 
 // Server Listening on Port 5000
 app.listen(5000, () => {
