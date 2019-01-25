@@ -11,43 +11,6 @@ const axios = require('axios');
 app.use(express.static('public'));
 
 // API Call
-// News API
-// axios.get('https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=6afdb077c1994657ab9284882c5c296e')
-//     .then((res)=>{
-//         console.log(res.data);
-//     })
-//     .catch((err)=>{
-//         console.log(err);
-//     });
-
-    // Youtube API - Setup URL
-    // var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
-    // var query = 'kobe+bryant';
-    // axios.get('https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&type=video&key=' + youtubeAPIkey)
-    //     .then((res) => {
-    //         let output = `<div class = video> Video </div>`;
-    //         let videoID = res.data.items[0].id.videoId;
-
-    //         console.log(videoID);
-
-    //         output += `
-    //             <div id="youtube-video">
-    //             <iframe width="100%" height="auto" src="https://www.youtube.com/embed/${videoID}" 
-    //             frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    //             </div>
-    //         `
-    //         // console.log(output);
-    //         var x = document.getElementById("test");
-    //         console.log(x);
-    //         // x.innerHTML = output
-
-    //     })
-    //     .catch((err) => {
-    //         console.log(err)
-    //     });
-
-
-
 // Stock Information -  alphavantage API key
 // var alphaAPI = 'DSORZL6DK0TYSLAP';
 // var company = 'MSFT'
