@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title><%= pageTitle %></title>
+    <title>Homepage</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,11 +18,7 @@
     <%- include partials/navbar.ejs %>
     <%- include partials/searchBar.ejs %>
         
-
-   <div id="youtube-video">
-        <iframe width="50%" height="auto" src="https://www.youtube.com/embed/<%= videoLink %>" 
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <div id = "youtubeDivID" style = "height: 500px; width: 500px"></div>
 
 
     <!-- Optional JavaScript -->
