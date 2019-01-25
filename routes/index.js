@@ -4,7 +4,7 @@ const axios = require('axios');
 
 
 router.get('/',(req,res)=>{
-     // Youtube API - Setup URL
+     Youtube API - Setup URL
     var output = '';
     var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
     // Query needs to be based off of user input
@@ -15,10 +15,11 @@ router.get('/',(req,res)=>{
             // Returning the output of JSON file to the next promise
             return output
         }).then((output) =>{
-            // Utilizing output from previous promise to render onto next page once API call is complete
+            Utilizing output from previous promise to render onto next page once API call is complete
             res.render('index', {
                 pageTitle: 'Welcome!',
-                videoLink: output})
+                videoLink: output
+            })
         })
             });
 module.exports = router;
