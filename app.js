@@ -3,10 +3,6 @@ const app = express();
 const axios = require('axios');
 const db = require('./models/');
 
-
-
-
-
 // Middleware
 app.use(express.static('public'));
 
@@ -25,9 +21,6 @@ app.use(express.static('public'));
 // .catch((err)=>{
 //     console.log(err);
 // });
-
-
-
 
 
 // Passport Setup
@@ -61,8 +54,6 @@ app.use(session({
 
 myStore.sync();
 
-// Passport Config
-
 
 // EJS setup
 app.set('view engine', 'ejs');
@@ -79,15 +70,15 @@ app.get('/register', (req,res)=>{
     res.render('register')
 });
 
-app.post('/register', (req,res)=>{
-    let pwd = bcrypt.hashSync(req.body.password,8);
+app.post('/register', (req, res) =>{
 
+    let pwd = bcrypt.hashSync(req.body.password,8);
+    
     db.users.create({username:req.body.username, password:pwd })
     .then((result)=>{
         res.redirect('/login')
     })
-});
-
+})
 
 app.get('/login', (req,res)=>{
     res.render('login')
@@ -101,13 +92,13 @@ app.post('/login', passport.authenticate('local', {successRedirect: '/',
 passport.use(new LocalStrategy((username, password, done)=>{
     // console.log('I am inside of local strategy')
     db.users.findAll({where: {username: username}})
-    .then((results)=>{
-        if(results != null){
-            let data = results[0]
+    .then((res)=>{
+        if(res != null){
+            let data = res[0]
 
             bcrypt.compare(password, data.password, (err, res)=>{
                 console.log("A result was found");
-                console.log(results)
+                console.log(res)
                 if(res){
                     done(null,{id: data.id, username: data.username})
                 }
