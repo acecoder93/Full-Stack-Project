@@ -5,7 +5,6 @@ module.exports = (sequelize, DataTypes) => {
     uid: DataTypes.INTEGER
   }, {});
   todos.associate = function(models) {
-    todos.belongsTo(models.users, {foreignKey: 'uid', targetKey: 'sid'});
     // associations can be defined here
   };
   return todos;

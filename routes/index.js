@@ -4,6 +4,8 @@ const axios = require('axios');
 
 
 router.get('/',(req,res)=>{
+
+    res.send('home page');
 // News API
     // var articles = '';
     // var html = '';
