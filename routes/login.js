@@ -6,4 +6,8 @@ router.get('/login', (req,res)=>{
 });
 
 
+// app.get('/login', (req,res)=>{
+//     res.render('login')
+// });
+
 module.exports = router;

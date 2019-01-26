@@ -6,6 +6,9 @@ const db = require('./models/');
 // Middleware
 app.use(express.static('public'));
 
+// EJS setup
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 
 // Passport Setup
 var LocalStrategy = require('passport-local').Strategy;
@@ -17,11 +20,9 @@ var bcrypt = require('bcryptjs');
 var Sequelize = require('sequelize');
 var SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-
 // Middleware›
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-
 app.use(cookieParser());
 
 // Set-Up Sessions
@@ -38,21 +39,16 @@ app.use(session({
 
 myStore.sync();
 
-
-// EJS setup
-app.set('view engine', 'ejs');
-app.set('views', 'views');
-
-
 // Passport Config
 app.use(passport.initialize());
 app.use(passport.session());
 
 
 // Registration form
-app.get('/register', (req,res)=>{
-    res.render('register')
-});
+// Moved to router/register.js
+// app.get('/register', (req,res)=>{
+//     res.render('register')
+// });
 
 app.post('/register', (req, res) =>{
 
@@ -64,9 +60,10 @@ app.post('/register', (req, res) =>{
     })
 })
 
-app.get('/login', (req,res)=>{
-    res.render('login')
-});
+// Moved content below to routes/login.js
+// app.get('/login', (req,res)=>{
+//     res.render('login')
+// });
 
 // Verify Credentials
 app.post('/login', passport.authenticate('local', {successRedirect: '/dashboard',
@@ -88,18 +85,16 @@ passport.use(new LocalStrategy((username, password, done)=>{
                     done(null,{id: data.id, username: data.username})
                 }
             })
-            
-
         }else{
             console.log("Nothing as found");
             done(null,false)
         }
     })
-
-}))
+}));
 
 //  Access Control
 // If someone visits main page, auto-directed to register/login
+// Regular site is acessible; however to acess the dashboard and individual will have to login (this is where all the key functionality will exist)
 app.get('/', (req, res)=>{
 
     if(!req.isAuthenticated()){
@@ -107,20 +102,16 @@ app.get('/', (req, res)=>{
         // res.redirect('/login');
         return;
     }
-    res.render('dashboard')})
-    // res.send('you are authenticated and you can see this page')})
+    res.render('dashboard')});
 
 
-// Regular site is acessible; however to acess the dashboard and individual will have to login (this is where all the key functionality will exist)
-
-
-
-app.get('/logout', (req, res)=>{
-    req.session.destroy((err)=>{
-        req.logout();
-        res.sendStatus(200);
-    })
-});
+//  Moved logout content below to routes/logout.js
+// app.get('/logout', (req, res)=>{
+//     req.session.destroy((err)=>{
+//         req.logout();
+//         res.sendStatus(200);
+//     })
+// });
 
 
 passport.serializeUser((user,done)=>{
@@ -137,6 +128,7 @@ passport.deserializeUser((id, done)=>{
 app.use(require('./routes/index'));
 app.use(require('./routes/feedback'));
 app.use(require('./routes/login'));
+app.use(require('./routes/logout'));
 app.use(require('./routes/register'));
 app.use(require('./routes/dashboard'));
 
