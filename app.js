@@ -69,7 +69,7 @@ app.get('/login', (req,res)=>{
 });
 
 // Verify Credentials
-app.post('/login', passport.authenticate('local', {successRedirect: '/',
+app.post('/login', passport.authenticate('local', {successRedirect: '/dashboard',
                                                     failureRedirect: '/login'}));
 
 
@@ -79,6 +79,7 @@ passport.use(new LocalStrategy((username, password, done)=>{
     .then((res)=>{
         if(res != null){
             let data = res[0]
+            console.log(data)
 
             bcrypt.compare(password, data.password, (err, res)=>{
                 console.log("A result was found");
@@ -98,13 +99,21 @@ passport.use(new LocalStrategy((username, password, done)=>{
 }))
 
 //  Access Control
+// If someone visits main page, auto-directed to register/login
 app.get('/', (req, res)=>{
+
     if(!req.isAuthenticated()){
         res.redirect('/register');
+        // res.redirect('/login');
         return;
     }
-    res.send('you are authenticated and you can see this page')
-});
+    res.render('dashboard')})
+    // res.send('you are authenticated and you can see this page')})
+
+
+// Regular site is acessible; however to acess the dashboard and individual will have to login (this is where all the key functionality will exist)
+
+
 
 app.get('/logout', (req, res)=>{
     req.session.destroy((err)=>{
@@ -129,6 +138,7 @@ app.use(require('./routes/index'));
 app.use(require('./routes/feedback'));
 app.use(require('./routes/login'));
 app.use(require('./routes/register'));
+app.use(require('./routes/dashboard'));
 
 // Server Listening on Port 5000
 app.listen(5000, () => {
