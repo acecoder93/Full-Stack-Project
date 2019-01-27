@@ -2,16 +2,14 @@ $(function(){
 
     // Youtube API 
     var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
-    var query = 'design';
+    var query = 'javascript';
     var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&type=video&key=' + youtubeAPIkey;
     
     $.get(url)
     .done((result)=>{
         // console.log(result);
         var output = result.items[0].id.videoId
-        console.log(output);  
     
-        var $youtubeDiv =$('#youtubeDivID');
         var $youtubeDiv =$('#youtubeDivID');
         var $youtubeFrame =  $('<iframe>', {
             'width': '500px',
