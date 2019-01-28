@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Login Here</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+      <%- include partials/navbar.ejs %>
+      <form id='feedback-form' action="/login" method="POST" >
+        <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="text-center default-text py-3"><i class="fa fa-lock"></i><b>Login Here</b></h3>
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input name="username" type="text" id="defaultForm-fName" class="form-control">
+                            <label for="defaultForm-fName">Username</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input name="password" type="password" id="defaultForm-lName" class="form-control">
+                            <label for="defaultForm-lName">Password</label>
+                        </div>
+                        <button id="submit-button" type="submit" value=submit class="btn btn-primary btn-sm">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <a href="./register">
+            <button id ="registerbutton" class="btn">
+            Register <span class="badge badge-primary"></span>
+            </button>
+        </a>
+    <!-- <form action="/login" method="POST">
+    
+            Username: <input type="text" name="username"><br>
+            Password: <input type="password" name="password">
+            <input type="submit" value="submit">
+    </form> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

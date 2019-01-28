@@ -163,3 +163,25 @@ right: -17px;
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+/* Logout Button */
+#logoutbutton{
+    opacity: 1; 
+    font-family: 'Dosis', sans-serif;
+    background-color: transparent;
+    color: white
+}
+#loginbutton{
+    opacity: 1; 
+    font-family: 'Dosis', sans-serif;
+    background-color: transparent;
+    color: white
+}
+#registerbutton{
+    opacity: 1; 
+    font-family: 'Dosis', sans-serif;
+    background-color: transparent;
+    color: white
+}
+>>>>>>> 9c7aab70e68a5effe8b273302495726961ef9213
