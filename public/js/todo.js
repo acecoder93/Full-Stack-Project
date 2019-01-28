@@ -19,6 +19,7 @@ $(function(){
             li.prepend(span);
             $('#mainUl').append(li);
             $('input').val('');
+            
         }
     });
 
