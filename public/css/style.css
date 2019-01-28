@@ -4,6 +4,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-size: 10px;
 }
 nav{
     background-image: linear-gradient(rgba(0, 0, 0, 0.644),transparent);
@@ -106,7 +107,7 @@ p {
 
 /* THIS IS FOR THE SEARCH BAR */
 .search-container{
-width: 490px;
+width: 380px;
 display: block;
 margin: 0 auto;
 }
@@ -142,7 +143,7 @@ position: relative;
 float: right;
 width: 75px;
 height: 75px;
-top: -70px;
+top: -60px;
 right: -17px;
 }
 ::placeholder{
