@@ -5,7 +5,7 @@ const axios = require('axios');
 
 router.get('/',(req,res)=>{
     res.render('index',{
-        pageTitle: 'Welcome!'
+        pageTitle: 'Ze Landing'
     })
 })
 
