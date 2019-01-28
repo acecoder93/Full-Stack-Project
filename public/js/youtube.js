@@ -1,9 +1,13 @@
-$(function (){
+$(function(){
+
+    $()
+
 
     // Youtube API 
     var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
-    // var query =  $('#youtubeQuery').val();
-    var query = 'javascript';
+    var query =  $('#youtubeQuery').val();
+    console.log(query);
+    // var query = 'javascript';
     var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&type=video&key=' + youtubeAPIkey;
     
     $.get(url)
