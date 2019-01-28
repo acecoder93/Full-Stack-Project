@@ -53,8 +53,13 @@ app.use(passport.session());
 app.post('/register', (req, res) =>{
 
     let pwd = bcrypt.hashSync(req.body.password,8);
+
+    console.log(req.body.email);
+    console.log(req.body.firstName);
+    console.log(req.body.lastName);
+    console.log(req.body.zipcode);
     
-    db.users.create({username:req.body.username, password:pwd })
+    db.users.create({username:req.body.username, password:pwd, email:req.body.email, firstName:req.body.firstName, lastName:req.body.lastName, zipcode:req.body.zipcode})
     .then((result)=>{
         res.redirect('/login')
     })
