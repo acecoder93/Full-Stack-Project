@@ -2,7 +2,15 @@
   "development": {
     "username": "postgres",
     "password": null,
+<<<<<<< HEAD
     "database": "fullstackproj",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }}
+=======
+    "database": "database_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
+>>>>>>> Raul
