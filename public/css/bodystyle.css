@@ -1,0 +1,141 @@
+#box01{
+    height: 600px; 
+    /* width:29%;  */
+    padding:15px; 
+    /* margin-left: 10px; 
+    margin-right:10px; */
+    background-color: rgba(0, 0, 0, 0.311);
+    overflow: scroll;
+    /* display: inline; */
+    float:none; 
+    margin: 0 auto;
+    
+}
+#box02{
+    /* width: 37%; */
+    background-color: rgba(0, 0, 0, 0.311);
+    float:none; 
+    margin: 0 auto;
+    
+}
+#box02a{
+    height: 295px; 
+    padding:10px;
+}
+#box02b{
+    height: 295px; 
+    padding:10px;
+}
+#box03{
+    height: 600px; 
+    /* width:29%;  */
+    padding:15px; 
+    /* margin-left:10px;   */
+    background-color: rgba(0, 0, 0, 0.311);
+    float:none; 
+    margin: 0 auto;
+    
+}
+
+/* TODOLIST FORMATTING */
+#toDoInput{
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+#mainField{
+    position: relative;
+    width: 100%;
+    /* top: 90px; */
+    /* left: 10%; */
+    /* margin-left: -200px; */
+}
+#mainInput{
+    font-family: 'Dosis', sans-serif;
+    height: 43px; 
+    background-color: transparent; 
+    width:100%;
+    font-size: 23px;
+    
+}
+#submitButton{
+    font-family: 'Dosis', sans-serif;
+    font-size:1.2rem;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-left: 33%;
+    
+}
+/* h1{
+    font-family: 'Abel', sans-serif;
+    font-size:1.2rem;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #00c3ff, #89d4ab);
+    background-color: #89d4ab;
+    height:53px;
+} */
+li{
+    font-family: 'Dosis', sans-serif;
+    background-color: transparent;
+    font-size:1.2rem;
+    height: 45px;
+    line-height: 45px;
+    color: white
+}
+li:nth-child(2n){
+    background-color: transparent;
+}
+li:hover .trash {
+    width:45px;
+    opacity:1;
+}
+.main{
+    /* margin: auto auto; */
+    justify-content: center;
+    width:500px;
+}
+input{
+    font-family: 'Dosis', sans-serif;
+    border: 3px solid rgba(0,0,0,0);
+    font-size:1.1rem;
+    background-color: transparent;
+    width:100%;
+    padding: 10px 10px 10px 20px;
+    color: white
+     /* #faaca8; */
+}
+input:focus{
+    outline: none;
+    background-color: transparent;
+    border: 3px solid #c6f2ff;
+}
+.completed{
+    color:gray;
+    text-decoration: line-through;
+}
+.cont{
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.trash{
+    background-color:#e74c3c;
+    height:45px;
+    margin-right:20px;
+    width:0;
+    text-align: center;
+    color:white;
+    display: inline-block;
+    transition: 0.3s linear;
+    opacity:0;
+}
+.hide{
+    display: none;
+}
+
+.thumbnail{
+    border:none !important;
+    background: transparent !important;
+    box-shadow:none !important;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}

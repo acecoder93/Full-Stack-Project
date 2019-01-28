@@ -16,7 +16,6 @@ nav{
     background-color: transparent;
     text-shadow: 1px 1px black;
 }
-
 .nav-item:hover,.navbar-nav:hover {
     font-family: 'Dosis', sans-serif;
     font-size: 24px;
@@ -25,7 +24,6 @@ nav{
     text-shadow: 1px 1px black;
     background-color: transparent;
 }
-
 .navbar-brand{
         color: white;
         text-shadow: 1px 1px black;
@@ -60,14 +58,16 @@ nav{
 #navStats{
     text-decoration: none;
 }
-
 #searchBar{
     width:400px; 
     opacity: 1; 
     font-family: 'Dosis', sans-serif;
     background-color: transparent;
-    color: white
+    color: white;
+    text-shadow: 1px 1px black;
 }
+
+
 
 /* Feedback-form Styling */
 #feedback-form{
@@ -80,6 +80,7 @@ nav{
     text-align: center;
     opacity: .8;
 }
+
 
 /* BELOW FONTS FOR REFERENCE <- */
   /* h1 {
@@ -111,7 +112,8 @@ margin: 0 auto;
 }
 input#search-bar{
 margin: 0 auto;
-margin-top: 20px;
+margin-top: 5px;
+margin-bottom: 0px;
 width: 100%;
 height: 45px;
 padding: 0 20px;
@@ -123,7 +125,8 @@ background-color: transparent;
 input#search-bar:focus{
 font-family: 'Dosis', sans-serif;
 margin: 0 auto;
-margin-top: 20px;
+margin-top: 5px;
+margin-bottom: 0px;
 width: 100%;
 height: 45px;
 padding: 0 20px;
@@ -131,6 +134,7 @@ font-size: 1rem;
 border: 1px solid #008ABF;
 transition: 0.35s ease;
 color: rgb(255, 255, 255);
+text-shadow: 1px 1px black;
 background-color: transparent;        
 }
 .search-icon{
@@ -138,16 +142,19 @@ position: relative;
 float: right;
 width: 75px;
 height: 75px;
-top: -62px;
+top: -70px;
 right: -17px;
 }
 ::placeholder{
     font-family: 'Dosis', sans-serif;
     color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.589);
     opacity: 0.9;
 }
 /* END OF SEARCH BAR STUFF */
 
+
+/* THIS IS FOR GOOD DAY, USER */
 .display-3{
     margin-top: 30px;
     font-family: 'Dosis', sans-serif;
@@ -155,3 +162,4 @@ right: -17px;
     text-shadow: 1px 1px black;
     text-align: center;
 }
+
