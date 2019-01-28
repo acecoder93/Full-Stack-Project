@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 // const session = require('express-session');
 // const passport = require('passport');
 // const db = require('./models/');
+const request = require('request');
 
 //EJS SETUP
 app.set('view engine','ejs');
@@ -16,8 +17,9 @@ app.use(express.static('public'));
 // app.use(express.bodyParser());
 // app.use(express.cookieParser());
 
-app.use(require('./routes/index'))
-app.use(require('./public/weather'))
+app.use(require('./routes/index'));
+app.use(require('./public/weather'));
+app.use(require('./public/spotify'));
 
 
 // //WEATHER API
