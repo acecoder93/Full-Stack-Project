@@ -9,17 +9,17 @@
 <h2>Built With: </h2>
 
 <h3> NPM Installs </h3>
-passport
-passport-local
-cookie-parser
-body-parser
-express-session
-bcryptjs
-sequelize
-pg
-pg-hstore
-express
-ejs
+passport <br>
+passport-local <br>
+cookie-parser <br>
+body-parser <br>
+express-session <br>
+bcryptjs <br>
+sequelize <br>
+pg <br>
+pg-hstore <br>
+express <br>
+ejs <br>
 connect-session-sequelize
 
 <h2>Authors</h2>
