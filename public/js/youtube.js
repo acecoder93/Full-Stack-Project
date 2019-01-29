@@ -10,8 +10,9 @@ $('#youtubeButton').click(function(){
         console.log(output);
         var $youtubeDiv =$('#youtubeVideoSpot');
         var $youtubeFrame =  $('<iframe>', {
-            'width': '500px',
-            'height': '281px',
+            'width': '380px',
+            'height': '260px',
+            
             'src': `https://www.youtube.com/embed/${output}`,
             'frameborder': '0',
             'allow': 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'

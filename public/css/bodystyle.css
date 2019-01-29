@@ -145,11 +145,13 @@ input:focus{
 #randomquote{
     margin-top: 20px;
     padding-bottom: 20px;
-    width: 100%;
+    width: 60%;
     height: 70px;
     background-image: linear-gradient(transparent, black);
     text-align: center;
 }
+
+/* QOUTE STUFF */
 #quoteDiv{
     font-family: 'Dosis', sans-serif;
     font-style: italic;
@@ -163,4 +165,20 @@ input:focus{
     font-size: 20px;
     color: white;
     text-shadow: 1px 1px black;
+}
+
+
+/* YOUTUBE STUFF */
+
+#youtubeQuery{
+    margin-top:-8px; 
+    position:relative; 
+    top:3px; 
+    height: 40px; 
+    width: 60%;
+}
+
+
+#youtubeButton{
+    font-size: 14px;
 }
