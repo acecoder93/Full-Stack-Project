@@ -139,3 +139,28 @@ input:focus{
 ::-webkit-scrollbar { 
     display: none; 
 }
+
+
+/* QUOTE STYLING */
+#randomquote{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(transparent, black);
+    text-align: center;
+}
+#quoteDiv{
+    font-family: 'Dosis', sans-serif;
+    font-style: italic;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 24px;
+    
+}
+#quoteAuthor{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
+}

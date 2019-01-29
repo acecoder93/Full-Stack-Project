@@ -17,9 +17,9 @@ $(function(){
             'text' : quote
         });
 
-        $randomQuote.append($authorDiv);
         $randomQuote.append($quoteDiv);
-
+        $randomQuote.append($authorDiv);
+        
         return $randomQuote
     })
 })
