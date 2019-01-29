@@ -23,15 +23,14 @@
     <%- include partials/searchBar.ejs %>
     <%- include partials/mainBody.ejs %>
         
-    <div id = "youtubeDivID" style="background-color: green">
-      <input id="youtubeQuery" type="text">
-      <button type="button" id="youtubeButton">Go</button>
-
+    <div id = "youtubeDivID">
+      <input id="youtubeQuery" style = "width: 500px" placeholder="What video are you feelin'?" type="text">
+      <button type="button" id="youtubeButton">Youtube Time!</button>
     </div>
 
-    <div id = "stocklist" style = "height: 100px; width: 100px; background-color: blue ">
-      <input id="stockQuery" type="text">
-      <button type="button" id="stockButton">Go</button>
+    <div id = "stocklist" style = "height: 100px; width: 300px">
+      <input id="stockQuery" placeholder="Search by stock ticker $$$" type="text">
+      <button type="button" id="stockButton">$tock$</button>
     </div>
     <div id = "randomquote" style = "height: 100px; width: 400px; background-color: red "></div>
 
