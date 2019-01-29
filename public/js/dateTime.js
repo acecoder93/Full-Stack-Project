@@ -8,7 +8,7 @@ function startInterval()
     function startTime()
     {
         var dt = new Date();
-        document.getElementById("navTime").innerHTML = dt.toLocaleTimeString();
+        document.getElementById("navTime").innerHTML = dt.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
     }
 
 var dt = new Date();
