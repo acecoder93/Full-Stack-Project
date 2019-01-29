@@ -29,7 +29,7 @@ nav{
     font-family: 'Dosis', sans-serif;
     font-size: 24px;
     font-weight: 400;
-    color:yellow;
+    color:#F1BF6D;
     text-shadow: 1px 1px black;
     background-color: transparent;
 }
@@ -39,7 +39,7 @@ nav{
         background-color: transparent;
 }
 .navbar-brand:hover{
-        color: yellow;
+        color: #F1BF6D;
         text-shadow: 1px 1px black;
         background-color: transparent;
 }
@@ -58,7 +58,7 @@ nav{
     font-family: 'Dosis', sans-serif;
     font-size: 19px;
     font-weight: 400;
-    color: yellow;
+    color: #F1BF6D;
     text-shadow: 1px 1px black;
     background-color: transparent;
     display: inline;
