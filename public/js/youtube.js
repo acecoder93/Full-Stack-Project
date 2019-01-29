@@ -1,14 +1,14 @@
 // Youtube API
 $('#youtubeButton').click(function(){
     var query = $('#youtubeQuery').val();
-    console.log(query);
     var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
     var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&type=video&key=' + youtubeAPIkey;
     
     $.get(url)
     .done((result)=>{
         var output = result.items[0].id.videoId
-        var $youtubeDiv =$('#youtubeDivID');
+        console.log(output);
+        var $youtubeDiv =$('#youtubeVideoSpot');
         var $youtubeFrame =  $('<iframe>', {
             'width': '500px',
             'height': '281px',
@@ -21,6 +21,6 @@ $('#youtubeButton').click(function(){
             document.getElementById("youtubeQuery").value = "";
         }
         clearFields()
-        
-        return $youtubeDiv.append($youtubeFrame);
+
+        return $($youtubeDiv).html($youtubeFrame);
 })});
