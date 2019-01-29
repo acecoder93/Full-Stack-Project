@@ -28,6 +28,12 @@ $('#stockButton').click(function(){
         $list.append($priceList);
         $list.append($changePercent);
 
+        function clearFields() {
+            document.getElementById("stockQuery").value = "";
+        }
+        clearFields()
+        
+
         return $list
     })
 
