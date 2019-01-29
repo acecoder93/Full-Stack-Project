@@ -19,6 +19,9 @@ $(function(){
             li.prepend(span);
             $('#mainUl').append(li);
             $('input').val('');
+
+            db.todos.create({tasks: task, uid:'1'});
+            
             
         }
     });
