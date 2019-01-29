@@ -47,17 +47,23 @@ app.use(passport.session());
 app.post('/register', (req, res) =>{
 
     let pwd = bcrypt.hashSync(req.body.password,8);
-
-    // console.log(req.body.email);
-    // console.log(req.body.firstName);
-    // console.log(req.body.lastName);
-    // console.log(req.body.zipcode);
     
     db.users.create({username:req.body.username, password:pwd, email:req.body.email, firstName:req.body.firstName, lastName:req.body.lastName, zipcode:req.body.zipcode})
     .then((result)=>{
         res.redirect('/login')
     })
-})
+});
+
+// TODO in Progress
+// app.post('/todo', (req,res)=>{
+//     console.log(req.body);
+
+//     db.todos.create({tasks:req.body.tasks})
+//     .then((Result)=>{
+//         res.redirect('/dashboard');
+//     })
+
+// })
 
 
 // Verify Credentials
@@ -116,6 +122,7 @@ app.use(require('./routes/login'));
 app.use(require('./routes/logout'));
 app.use(require('./routes/register'));
 app.use(require('./routes/dashboard'));
+app.use(require('./routes/todo'));
 
 // Server Listening on Port 5000
 app.listen(5000, () => {

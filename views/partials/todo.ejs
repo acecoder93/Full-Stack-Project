@@ -1,4 +1,7 @@
-<div id='mainField' class='main mt-0'>
+<!-- <div id='mainField' class='main mt-0'> </div> -->
+
+
+<form id="mainField" action="/todo" method="post">	
 		<!-- <h1 id='toDoInput' class='text-white m-0 p-3 '>  So, what we working with? -->
 			<!-- <i class="fas fa-shopping-basket mr-2"></i> -->
 			<!-- <i class="fas fa-wine-glass-alt"></i> -->
@@ -9,12 +12,13 @@
 		<input id='mainInput' type="text" placeholder="Click Here To Add Tasks">
 		<span>
 		</span>
+
 		<ul id='mainUl' class='list-group list-unstyled m-0 p-0'>
 			<!-- <li class='list-item'>
 				<span class='trash'>
 					<i class="fas fa-trash-alt"></i>
 				</span>
 			</li> -->
-		</ul>				
-		<button id='submitButton' type="button" class="btn btn-warning">Enter to Add / Click to Save</button>
-    </div>
+		</ul>
+		<button type="submit" value="submit" id='submitButton' type="button" class="btn btn-warning">Enter to Add / Click to Save</button>
+	</form>
