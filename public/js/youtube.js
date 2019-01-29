@@ -1,24 +1,8 @@
-$(function(){
-
-    var query =  $('#youtubeButton').click(function(){
-        var userResponse = $('#youtubeQuery').val();
-        console.log(userResponse);
-        return userResponse
-        
-    })
-
-
-    $(function youtubeGo(query){
-    // Youtube API 
-    var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
-    // var query =  $('#youtubeButton').click(function(){
-    //     var userResponse = $('#youtubeQuery').val();
-    //     console.log(userResponse);
-    //     return userResponse
-    // })
- 
+// Youtube API
+$('#youtubeButton').click(function(){
+    var query = $('#youtubeQuery').val();
     console.log(query);
-    // var query = 'javascript';
+    var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';
     var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + query + '&type=video&key=' + youtubeAPIkey;
     
     $.get(url)
@@ -32,13 +16,11 @@ $(function(){
             'frameborder': '0',
             'allow': 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
         });
+
+        function clearFields() {
+            document.getElementById("youtubeQuery").value = "";
+        }
+        clearFields()
+        
         return $youtubeDiv.append($youtubeFrame);
-
-    })
-    })
-
-    youtubeGo(query)
-
-
-
-})
+})});
