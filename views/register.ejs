@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
   </head>
   <body>
       
       <%- include partials/navbar.ejs %>
-      <form id='feedback-form' action="/register" method="POST">
+
+      <video autoplay loop id="myVideo" src="./images/bg_2_video.mov"></video>
+
+      <form id='feedback-form' action="/register" method="POST" class = "animated fadeIn slow">
         <div class="col-md-5">
                 <div class="card">
                     <div class="card-body">
@@ -22,15 +27,34 @@
                         <!--Body-->
                         <div class="md-form">
                             <i class="fa fa-envelope prefix grey-text"></i>
-                            <input name="username" type="text" id="defaultForm-fName" class="form-control">
-                            <label for="defaultForm-fName">Username</label>
+                            <input name="email" type="text" id="defaultForm-email" class="form-control">
+                            <label for="defaultForm-email">Email</label>
                         </div>
                         <div class="md-form">
                             <i class="fa fa-envelope prefix grey-text"></i>
-                            <input name="password" type="password" id="defaultForm-lName" class="form-control">
-                            <label for="defaultForm-lName">Password</label>
+                            <input name="username" type="text" id="defaultForm-username" class="form-control">
+                            <label for="defaultForm-username">Username</label>
                         </div>
-
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input name="password" type="password" id="defaultForm-password" class="form-control">
+                            <label for="defaultForm-password">Password</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input name="firstName" type="text" id="defaultForm-firstName" class="form-control">
+                            <label for="defaultForm-firstName">First Name</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input name="lastName" type="text" id="defaultForm-lastName" class="form-control">
+                            <label for="defaultForm-lastName">Last Name</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input name="zipcode" type="text" id="defaultForm-zipcode" class="form-control">
+                            <label for="defaultForm-zipcode">Zip Code</label>
+                        </div>
                         <button id="submit-button" type="submit" value=submit class="btn btn-primary btn-sm">Submit</button>
                     </div>
                 </div>

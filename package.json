@@ -17,17 +17,14 @@
   },
   "homepage": "https://github.com/acecoder93/Full-Stack-Project#readme",
   "dependencies": {
+    "animate.css": "^3.7.0",
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.3",
     "body-parser": "^1.18.3",
-<<<<<<< HEAD
     "connect-session-sequelize": "^6.0.0",
     "cookie-parser": "^1.4.3",
     "document-ready": "^2.0.2",
-=======
-    "cookie-parser": "^1.4.3",
->>>>>>> Raul
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
@@ -36,16 +33,10 @@
     "pg": "^7.8.0",
     "pg-hstore": "^2.3.2",
     "pg-promise": "^8.5.5",
-<<<<<<< HEAD
     "promise": "^8.0.2",
+    "query-string": "^6.2.0",
     "sequelize": "^4.42.0",
     "session": "^0.1.0"
   },
   "devDependencies": {}
-=======
-    "query-string": "^6.2.0",
-    "request": "^2.88.0",
-    "sequelize": "^4.42.0"
-  }
->>>>>>> Raul
 }

@@ -4,7 +4,16 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-size: 10px;
 }
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+ }
 nav{
     background-image: linear-gradient(rgba(0, 0, 0, 0.644),transparent);
 }
@@ -106,7 +115,7 @@ p {
 
 /* THIS IS FOR THE SEARCH BAR */
 .search-container{
-width: 490px;
+width: 380px;
 display: block;
 margin: 0 auto;
 }
@@ -142,7 +151,7 @@ position: relative;
 float: right;
 width: 75px;
 height: 75px;
-top: -70px;
+top: -60px;
 right: -17px;
 }
 ::placeholder{
@@ -153,6 +162,26 @@ right: -17px;
 }
 /* END OF SEARCH BAR STUFF */
 
+/* Search bar for APIs */
+#youtubeQuery, #stockQuery {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 400px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    background-color: transparent;   
+}
+
+#stockButton{
+    margin-left: 40%;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* THIS IS FOR GOOD DAY, USER */
 .display-3{
@@ -163,8 +192,6 @@ right: -17px;
     text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 /* Logout Button */
 #logoutbutton{
     opacity: 1; 
@@ -184,4 +211,3 @@ right: -17px;
     background-color: transparent;
     color: white
 }
->>>>>>> 9c7aab70e68a5effe8b273302495726961ef9213

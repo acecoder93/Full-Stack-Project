@@ -10,8 +10,8 @@ $(document).ready(function () {
         for (var i=0;i<=10;i++){   
             
             //Data in Variables
-            let newsTitle = ((result.articles[i].title)).substring(0,35)+' ...'
-            let newsDescription = (result.articles[i].description).substring(0,95)+'...'
+            let newsTitle = ((result.articles[i].title))
+            let newsDescription = (result.articles[i].description).substring(0,90)+'..'
             let newsSourceName = (result.articles[i].source.name)
             let newsImageUrl = ((result.articles[i].urlToImage))
             let newsUrl = ((result.articles[i].url))
@@ -22,7 +22,7 @@ $(document).ready(function () {
         
         <div style="width: 80%">
             <ul style="list-style: none; width: 100%; margin-left: -30px; margin-top: -5px; line-height: 2px;">
-                <li style="font-size: 14px; margin-bottom:-25px"><a href="${newsUrl}" target="_blank"><b>${newsTitle}</b></a></li>
+                <li style="overflow: hidden; font-size: 14px; margin-bottom:-25px"><a href="${newsUrl}" target="_blank"><b>${newsTitle}</b></a></li>
                 <li style="font-size: 14px; margin-bottom:-10px"><i>${newsSourceName}</i></li>
                 <li style="font-size: 14px; line-height: 16px;">${newsDescription} </li>
         </ul>

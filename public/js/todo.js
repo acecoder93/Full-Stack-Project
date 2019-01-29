@@ -6,19 +6,44 @@ $(function(){
 
     $("input[type='text']").keypress(function (e) { 
         if(e.which === 13){
+            e.preventDefault();
             let task = $(this).val();
+
             // make li element
             let li = $("<li>",{
                 "class":"list-item",
                 "text": task,
-                "id":"toDolistli"
+                "id":"toDolistli",
+                "name": "tasks"
             });
+
+            // create form
+            // let form = $("<form>",{
+            //     "id": "todo-form",
+            //     "action": "/todo",
+            //     "method": "POST"
+            // });
+
+            // let submit = $("<button>", {
+            //     "id": "todo-submit",
+            //     "type": "submit", 
+            //     "value": "submit",
+            //     "text":"Submit"
+            // })
+
+            // form.append(li);
+            // form.append(submit);
+
             let span = $("<span>",{"class":"trash"});
             let i = $('<i>',{"class":"fas fa-trash-alt"});
             span.append(i);
             li.prepend(span);
             $('#mainUl').append(li);
             $('input').val('');
+
+            db.todos.create({tasks: task, uid:'1'});
+            
+            
         }
     });
 

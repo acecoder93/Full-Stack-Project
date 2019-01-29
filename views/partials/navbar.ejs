@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<!-- <nav class="navbar navbar-expand-lg">
         
 
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,11 +9,12 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link active" href="#">Music</a>
-            <a class="nav-item nav-link active" href="#">Sports</a>
-            <a class="nav-item nav-link active" href="#">Finance</a>
-          </div>
-        </div>
+            <a class="nav-item nav-link active" href="#">Music</a> -->
+            <!-- Commeted out Sports & Finance as these will be future features -->
+            <!-- <a class="nav-item nav-link active" href="#">Sports</a>
+            <a class="nav-item nav-link active" href="#">Finance</a> -->
+          <!-- </div>
+        </div> -->
 
         <!-- THIS IS CLICKABLE / ADDITIONAL FORMATTING NEEDED -->
         <!-- <ul id='navStats'>
@@ -21,15 +22,48 @@
         <li><a id='navTime' href="#">Time</a></li>
         <li><a id='navTemp' href="#">Temperature</a></li>
         </ul>
-         -->
+        -->
 
         <!-- THIS INPUTS THEM AS A LIST BUT THEN ITS NOT CLICKABLE -->
-        <a id="navStats" href="#">       
-          <li href="#" id='navTime'></li> 
-          <li href="#" id='navDate'></li>
-          <li href="#" id='navTemp'>Temp</li>
+        <!-- <a id="navStats" href="#">        -->
+          <!-- <li href="#" id='navTime'></li> 
+          <li href="#" id='navDate'></li> -->
+          <!-- <li href="#" id='navTemp'>Temp</li>
         </a>
-        
+         -->
       </nav>
+
+      
+      <nav class="navbar navbar-expand-lg">
+          <!-- <a class="navbar-brand" href="#">(◕‿◕✿)</a> -->
+          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="#">Music</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Account
+                </a>
+                <div class="dropdown-menu" style='background-color: transparent;' aria-labelledby="navbarDropdownMenuLink">
+                  <a class="nav-item dropdown-item" href="./login">Login</a>
+                  <a class="nav-item dropdown-item" href="./register">Register</a>
+                  <a class="nav-item dropdown-item" href="./logout">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a id="navStats" href="#">       
+              <li href="#" id='navTime'></li> 
+              <li href="#" id='navDate'></li>
+              <li href="#" id='navTemp'>Temp</li>
+            </a>
+        </nav>
 
 
