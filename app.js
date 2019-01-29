@@ -56,13 +56,19 @@ app.post('/register', (req, res) =>{
 
 // TODO in Progress
 // app.post('/todo', (req,res)=>{
+//     console.log('check1')
+//     console.log("inside app: "  + req.body.toDo);
+//     console.log('check2')
+//     console.log(req.body.mainInput);
+//     console.log('check3')
 //     console.log(req.body);
-
-//     db.todos.create({tasks:req.body.tasks})
-//     .then((Result)=>{
-//         res.redirect('/dashboard');
-//     })
-
+//     console.log('check4')
+//     console.log('hello world');
+//     res.send('hello');
+    // db.todos.create({tasks:req.body.tasks})
+    // .then((Result)=>{
+    //     res.redirect('/dashboard');
+    // })
 // })
 
 
