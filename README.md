@@ -8,6 +8,20 @@
 
 <h2>Built With: </h2>
 
+<h3> NPM Installs </h3>
+passport
+passport-local
+cookie-parser
+body-parser
+express-session
+bcryptjs
+sequelize
+pg
+pg-hstore
+express
+ejs
+connect-session-sequelize
+
 <h2>Authors</h2>
 <li><a href="https://github.com/jeanjosephgeorge">Jean George</a></li>
 <li><a href="https://github.com/acecoder93">Anuj Saheba</a></li>
