@@ -23,14 +23,13 @@
     <%- include partials/searchBar.ejs %>
     <%- include partials/mainBody.ejs %>
         
-    <div id = "youtubeDivID" style="background-color: green">
-      <input id="youtubeQuery" type="text">
-      <button type="button" id="youtubeButton">Go</button>
-
+    <div id = "youtubeDivID">
+      <div id="youtubeVideoSpot"></div>
+      <input id="youtubeQuery" style = "width: 500px" placeholder="What video are you feelin'?" type="text">
+      <button type="button" id="youtubeButton">Youtube Time!</button>
     </div>
-
-    <div id = "stocklist" style = "height: 100px; width: 100px; background-color: blue "></div>
-    <div id = "randomquote" style = "height: 100px; width: 400px; background-color: red "></div>
+ 
+    <div id = "randomquote" style = "height: 50px; width: 500px; background-color: red "></div>
 
     <a href="./logout">
       <button id= "logoutbutton" class="btn">
@@ -46,17 +45,8 @@
     <script src="/js/todo.js"></script>
     <script src='/js/dateTime.js'></script>
     <script src='/js/stock.js'></script>
-    <!-- <script src="../app.js"></script> -->
     <script src="/js/youtube.js"></script>
     <script src="/js/news.js"></script>
-    <!-- <script src="/js/stock.js"></script> -->
     <!-- <script src="/js/quotes.js"></script> -->
-    <script>
- 
-    
-    
-    
-    
-    </script>
 </body>
 </html>

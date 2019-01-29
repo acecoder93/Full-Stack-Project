@@ -43,32 +43,28 @@ myStore.sync();
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-// Registration form
-// Moved to router/register.js
-// app.get('/register', (req,res)=>{
-//     res.render('register')
-// });
-
+// Registration Form
 app.post('/register', (req, res) =>{
 
     let pwd = bcrypt.hashSync(req.body.password,8);
-
-    console.log(req.body.email);
-    console.log(req.body.firstName);
-    console.log(req.body.lastName);
-    console.log(req.body.zipcode);
     
     db.users.create({username:req.body.username, password:pwd, email:req.body.email, firstName:req.body.firstName, lastName:req.body.lastName, zipcode:req.body.zipcode})
     .then((result)=>{
         res.redirect('/login')
     })
-})
+});
 
-// Moved content below to routes/login.js
-// app.get('/login', (req,res)=>{
-//     res.render('login')
-// });
+// TODO in Progress
+// app.post('/todo', (req,res)=>{
+//     console.log(req.body);
+
+//     db.todos.create({tasks:req.body.tasks})
+//     .then((Result)=>{
+//         res.redirect('/dashboard');
+//     })
+
+// })
+
 
 // Verify Credentials
 app.post('/login', passport.authenticate('local', {successRedirect: '/dashboard',
@@ -104,19 +100,9 @@ app.get('/', (req, res)=>{
 
     if(!req.isAuthenticated()){
         res.redirect('/register');
-        // res.redirect('/login');
         return;
     }
     res.render('dashboard')});
-
-
-//  Moved logout content below to routes/logout.js
-// app.get('/logout', (req, res)=>{
-//     req.session.destroy((err)=>{
-//         req.logout();
-//         res.sendStatus(200);
-//     })
-// });
 
 
 passport.serializeUser((user,done)=>{
@@ -136,6 +122,7 @@ app.use(require('./routes/login'));
 app.use(require('./routes/logout'));
 app.use(require('./routes/register'));
 app.use(require('./routes/dashboard'));
+app.use(require('./routes/todo'));
 
 // Server Listening on Port 5000
 app.listen(5000, () => {

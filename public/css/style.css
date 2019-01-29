@@ -6,6 +6,16 @@ body {
     background-size: cover;
     font-size: 10px;
 }
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+ }
 nav{
     background-image: linear-gradient(rgba(0, 0, 0, 0.644),transparent);
 }
@@ -154,6 +164,26 @@ right: -17px;
 }
 /* END OF SEARCH BAR STUFF */
 
+/* Search bar for APIs */
+#youtubeQuery, #stockQuery {
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 400px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid #D0CFCE;
+    outline: none;
+    background-color: transparent;   
+}
+
+#stockButton{
+    margin-left: 40%;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+}
 
 /* THIS IS FOR GOOD DAY, USER */
 .display-3{
