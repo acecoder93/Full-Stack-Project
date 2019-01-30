@@ -124,6 +124,10 @@ app.get('/', (req, res)=>{
     }
     res.render('dashboard')});
 
+app.get('/music', (req, res) => {
+    res.render('music');
+});
+
 
 passport.serializeUser((user,done)=>{
     done(null, user.id);
