@@ -154,8 +154,18 @@ height: 75px;
 top: -60px;
 right: -17px;
 background-image: "http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png";
-outline: none;
-border: none;
+}
+
+.search-icon:focus{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -60px;
+    right: -17px;
+    background-image: "http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png";
+    outline: 0;
+    border: 0;
 }
 ::placeholder{
     font-family: 'Dosis', sans-serif;
