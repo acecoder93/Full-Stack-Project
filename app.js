@@ -55,6 +55,21 @@ app.post('/register', (req, res) =>{
 });
 
 // TODO in Progress
+app.post('/todo', (req,res)=>{
+    console.log('check1')
+    console.log("inside app: "  + req.body.toDo);
+    console.log('check2')
+    console.log(req.body.mainInput);
+    console.log('check3')
+    console.log(req.body);
+    console.log('check4')
+    console.log('hello world');
+    res.send('hello');
+    db.todos.create({tasks:req.body.toDo})
+    .then((Result)=>{
+        res.redirect('/dashboard');
+    })
+})
 // app.post('/todo', (req,res)=>{
 //     console.log('check1')
 //     console.log("inside app: "  + req.body.toDo);
@@ -65,10 +80,10 @@ app.post('/register', (req, res) =>{
 //     console.log('check4')
 //     console.log('hello world');
 //     res.send('hello');
-    // db.todos.create({tasks:req.body.tasks})
-    // .then((Result)=>{
-    //     res.redirect('/dashboard');
-    // })
+//     db.todos.create({tasks:req.body.toDo})
+//     .then((Result)=>{
+//         res.redirect('/dashboard');
+//     })
 // })
 
 
@@ -128,7 +143,7 @@ app.use(require('./routes/login'));
 app.use(require('./routes/logout'));
 app.use(require('./routes/register'));
 app.use(require('./routes/dashboard'));
-app.use(require('./routes/todo'));
+// app.use(require('./routes/todo'));
 
 // Server Listening on Port 5000
 app.listen(5000, () => {
