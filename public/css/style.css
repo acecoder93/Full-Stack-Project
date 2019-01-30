@@ -153,6 +153,9 @@ width: 75px;
 height: 75px;
 top: -60px;
 right: -17px;
+background-image: "http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png";
+outline: none;
+border: none;
 }
 ::placeholder{
     font-family: 'Dosis', sans-serif;

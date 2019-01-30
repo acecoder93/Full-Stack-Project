@@ -142,6 +142,7 @@ app.use(require('./routes/login'));
 app.use(require('./routes/logout'));
 app.use(require('./routes/register'));
 app.use(require('./routes/dashboard'));
+app.use(require('./routes/google'));
 // app.use(require('./routes/todo'));
 
 // Server Listening on Port 5000

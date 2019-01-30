@@ -2,7 +2,12 @@
 
 <h1 class="display-3">Good Day, User!</h1>
 
-<form class="search-container">
-        <input type="text" id="search-bar" placeholder="What's the plan for today?">
-        <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+<form class="search-container" action="/google" target="_blank">
+        <!-- <input type="text" id="search-bar" placeholder="What's the plan for today?"> -->
+        <input name="q" type="search" id="search-bar" placeholder="What's the plan for today?">
+        
+        <input class="search-icon" type="image" alt="submit" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" value="go" class="search-icon">
+        
+        <!-- <a href="#"><img class="search-icon" type="submit" value="go" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a> -->
 </form>
+
