@@ -1,4 +1,4 @@
-body { 
+#mainBody { 
     background: url('https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
