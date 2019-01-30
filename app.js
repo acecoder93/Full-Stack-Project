@@ -64,11 +64,10 @@ app.post('/todo', (req,res)=>{
     console.log(req.body);
     console.log('check4')
     console.log('hello world');
-    res.send('hello');
     db.todos.create({tasks:req.body.toDo})
-    .then((Result)=>{
-        res.redirect('/dashboard');
-    })
+    // .then((Result)=>{
+    //     res.redirect('/dashboard');
+    // })
 })
 // app.post('/todo', (req,res)=>{
 //     console.log('check1')
