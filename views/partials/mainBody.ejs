@@ -1,35 +1,88 @@
 <div class="container-fluid" >
     <div class="row" style='width:100%; float:none; margin: 0 auto;'>
+        
         <div id='box01' class="col-lg-4 col-md-6 col-sm-10">
- 
         </div>
+
+        <div id='box03' class="col-lg-4 col-md-6 col-sm-10">
+                <!-- <%- include todo.ejs %> -->
+                </div>
+                
         <div id='box02' class="col-lg-4 col-md-6 col-sm-10">
-        <div id='box02a' class="row">   
+            
+            <div id='box02a' class="row">   
 
             <!-- YOUTUBE STUFF LIVES HERE -->
                 <div id = "youtubeDivID">
-                        <button class='btn btn-danger' type="button" id="youtubeButton">Youtube Me</button>
                         <input id="youtubeQuery" placeholder="Search Here" type="text">
+                        <button class='btn btn-danger' type="button" id="youtubeButton">Youtube!</button>
+
+                        
                         <div id="youtubeVideoSpot"></div>
                         
                         
-                    </div>
+                </div>
 
         </div>
         <div id='box02b' class="row">
             
 
         <!-- STOCK STUFF LIVES HERE -->
-            <div id = "stocklist" style = "height: 100px; width: 300px">
-                    <input id="stockQuery" placeholder="Search by stock ticker $$$" type="text">
-                    <button type="button" id="stockButton">$tock$</button>
+            <div id = "stocklist" style = "height: 100px; width: 350px">
+                    <input id="stockQuery" placeholder="Input custom stock ticker" type="text">
+                    <button type="button" class='btn btn-primary' id="stockButton">Stocks</button> 
+                    <div class="container" style="color:white; text-shadow: 1px 1px black; font-size: 12px; position: relative; top:-30px">
+                        <div class="row">
+                            <div id='tesla' class="col-2"><br>
+                                <div id='tesla01'></div><br>
+                                <div id='tesla02'></div><br>
+                                <div id='tesla03'></div><br>
+                                <div id='tesla04'></div><br>
+                                <div id='tesla05'></div><br>
+                            </div>
+                            <div id='apple' class="col-2"><br>
+                                <div id='apple01'></div><br>
+                                <div id='apple02'></div><br>
+                                <div id='apple03'></div><br>
+                                <div id='apple04'></div><br>
+                                <div id='apple05'></div><br>
+                            </div>
+                            <div id='microsoft' class="col-2"><br>
+                                <div id='msft01'></div><br>
+                                <div id='msft02'></div><br>
+                                <div id='msft03'></div><br>
+                                <div id='msft04'></div><br>
+                                <div id='msft05'></div><br>
+                            </div>
+                            <div id='qualcomm' class="col-2"><br>
+                                <div id='qcom01'></div><br>
+                                <div id='qcom02'></div><br>
+                                <div id='qcom03'></div><br>
+                                <div id='qcom04'></div><br>
+                                <div id='qcom05'></div><br>
+                            </div>
+                            <div id='twitter' class="col-2"><br>
+                                <div id='twtr01'></div><br>
+                                <div id='twtr02'></div><br>
+                                <div id='twtr03'></div><br>
+                                <div id='twtr04'></div><br>
+                                <div id='twtr05'></div><br>
+                            </div>
+                            <div id='customStock' class="col-2"><br>
+                                <div id='cstock01'></div><br>
+                                <div id='cstock02'></div><br>
+                                <div id='cstock03'></div><br>
+                                <div id='cstock04'></div><br>
+                                <div id='cstock05'></div><br>
+                            </div>
+                            
+                    </div>
                 </div>
 
+            </div> 
         </div>
-        </div>
-        <div id='box03' class="col-lg-4 col-md-6 col-sm-10">
-        <%- include todo.ejs %>
-        </div>
+
+     
     </div>
     </div>
 
