@@ -222,3 +222,12 @@ border: none;
 #submitButton{
     background-color: #FAE17D;
 }
+
+/* Music Page */
+#musicPage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2000px;
+    height: 800px;
+}
