@@ -192,6 +192,17 @@ right: -17px;
     text-align: center;
 }
 
+/* Lucid Logo */
+
+#lucidLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 100px;
+
+}
+
 /* Logout Button */
 #logoutbutton{
     opacity: 1; 
