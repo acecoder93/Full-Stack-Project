@@ -10,7 +10,7 @@ $(function(){
         if(e.which === 13){
             e.preventDefault();
             let task = $(this).val();
-            console.log(task);
+            // console.log(task);
 
             let li = $("<li>",{
                 "class":"list-item",
