@@ -11,7 +11,7 @@ $('#youtubeButton').click(function(){
         var $youtubeDiv =$('#youtubeVideoSpot');
         var $youtubeFrame =  $('<iframe>', {
             'width': '380px',
-            'height': '260px',
+            'height': '255px',
             
             'src': `https://www.youtube.com/embed/${output}`,
             'frameborder': '0',

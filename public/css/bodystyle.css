@@ -1,7 +1,7 @@
 #box01{
-    width: 350px;
+    width: 380px;
     height: 600px; 
-    padding:15px; 
+    padding:15px;
     /* margin-left: 10px; */
     margin-right:10px;
     background-color: rgba(0, 0, 0, 0.311);
@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 #box02{
-    width: 300px;
+    width: 380px;
     background-color: rgba(0, 0, 0, 0.311);
     float:none; 
     margin: 0 auto;
@@ -27,7 +27,7 @@
     padding:10px;
 }
 #box03{
-    width: 300px;
+    width: 380px;
     height: 600px; 
     padding:15px; 
     /* margin-left:10px;   */
@@ -144,11 +144,12 @@ input:focus{
 /* QUOTE STYLING */
 #randomquote{
     margin-top: 20px;
-    padding-bottom: 20px;
-    width: 60%;
-    height: 70px;
-    background-image: linear-gradient(transparent, black);
+    /* padding-bottom: 20px; */
+    width: 100%;
+    height: 200px;
+    /* background-image: linear-gradient(transparent, black); */
     text-align: center;
+    margin: 0 auto;
 }
 
 /* QOUTE STUFF */
@@ -158,7 +159,8 @@ input:focus{
     color: white;
     text-shadow: 1px 1px black;
     font-size: 24px;
-    
+    width: 100%;
+    text-align: center;
 }
 #quoteAuthor{
     font-family: 'Dosis', sans-serif;
@@ -175,10 +177,26 @@ input:focus{
     position:relative; 
     top:3px; 
     height: 40px; 
-    width: 60%;
+    width: 380px;
+}
+#youtubeButton{
+    position: relative;
+    top: -34px;
+    left: 295px;
+    font-size: 14px;
+}
+#youtubeVideoSpot{
+    position: relative;
+    top: -29px;
 }
 
-
-#youtubeButton{
-    font-size: 14px;
+/* STOCK BUTTON */
+#stockButton{
+    position: relative;
+    top: -39px;
+    left: 304px;
+}
+#stockQuery{
+    width: 380px;
+    height: 40px;
 }
