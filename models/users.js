@@ -9,7 +9,9 @@ module.exports = (sequelize, DataTypes) => {
     zipcode: DataTypes.STRING
   }, {});
   users.associate = function(models) {
-    
+    // users.hasMany(models.todos,{as:'user'})
+    // models.users.hasMany(models.todos)
+
     // associations can be defined here
   };
   return users;

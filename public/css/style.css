@@ -1,4 +1,4 @@
-body { 
+#mainBody { 
     background: url('https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -184,6 +184,17 @@ right: -17px;
     color:white;
     text-shadow: 1px 1px black;
     text-align: center;
+}
+
+/* Lucid Logo */
+
+#lucidLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 434px;
+    height: 249px;
+
 }
 
 /* Logout Button */

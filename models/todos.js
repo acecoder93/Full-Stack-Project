@@ -5,7 +5,15 @@ module.exports = (sequelize, DataTypes) => {
     uid: DataTypes.INTEGER
   }, {});
   todos.associate = function(models) {
-    // associations can be defined here
+    // users.belongsTo(models.todos,{as:'todos'})
+    // models.todos.belongsTo(models.users), {
+    //   onDelete: "CASCADE",
+    //   foreignKey:{
+    //     allowNull:false
+    //   }
+    // }
+
+    // associations can be defined here›
   };
   return todos;
 };
