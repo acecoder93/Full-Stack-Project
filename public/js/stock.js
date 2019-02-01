@@ -1,4 +1,4 @@
-// Stock API
+// Stock API to display API information on page
 
 // Jean API Key: NP69UHME13SQ492L
 // Anuj API Key: DSORZL6DK0TYSLAP
@@ -52,6 +52,8 @@ $('#stockButton').click(function(){
     })
 
 })
+
+// HARD CODING DISPLAY OF SET STOCK VALUES
 
 $(document).ready(function () {  
 

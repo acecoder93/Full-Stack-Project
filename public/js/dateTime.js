@@ -1,3 +1,5 @@
+// Code to put live date and time on the webpage
+
 window.onload = startInterval;
 
 function startInterval()

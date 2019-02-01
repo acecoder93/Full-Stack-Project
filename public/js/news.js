@@ -1,3 +1,5 @@
+// API for News Information
+
 $(document).ready(function () {        
     
     // Query format per topic
@@ -16,7 +18,8 @@ $(document).ready(function () {
             let newsImageUrl = ((result.articles[i].urlToImage))
             let newsUrl = ((result.articles[i].url))
 
-            
+        // BUILDING THE CONTENT AS HTML USING ES6    
+        
         html = `<div style="display:flex; height: 90px; margin-bottom: 5px; background-color:transparent">
         <div style="width: 20%; background-image:url('${newsImageUrl}'); background-size:cover; background-repeat:no-repeat; height:90px; width:90px;"></div>
         
@@ -29,6 +32,8 @@ $(document).ready(function () {
         </div>
         </div>`
     
+        //APPENDING TO ELEMENT IN MAIN LANDING PAGE
+        
         $('#box01').append(html)
             
     }}) // End of Loop

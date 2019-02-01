@@ -1,3 +1,5 @@
+// API TO PULL QOUTE AND DISPLAY ON MAIN LANDING PAGE
+
 $(function(){
     var url = 'http://quotes.rest/qod.json'
 

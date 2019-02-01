@@ -1,4 +1,5 @@
 // Youtube API
+
 $('#youtubeButton').click(function(){
     var query = $('#youtubeQuery').val();
     var youtubeAPIkey = 'AIzaSyAAY8PfuRZux7Uw06bjgWK6MCEz6Uho1TE';

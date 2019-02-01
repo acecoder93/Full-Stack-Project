@@ -1,41 +1,9 @@
-// From Current Project:
+// MUSICMATCH API SETUP
 
 // var express = require('express');
 // var router = express.Router();
 // const axios = require('axios');
 
-// router.get('/',(req,res)=>{
-
-// News API
-    // var articles = '';
-    // var html = '';
-    // axios.get('https://newsapi.org/v2/top-headlines?' + 'country=us&' + 'apiKey=6afdb077c1994657ab9284882c5c296e')
-    // .then((res)=>{
-    //     var articles = res.data.articles;
-
-    //     for(var i = 1; i < 5; i++){
-    //         html +=  articles[i].title
-            
-//             `
-//             // console.log(articles[i].title)
-//             // console.log(articles[i].title)
-//         }
-//         // articles.forEach((item)=>{
-//         //     html += `
-//         //     <li> 
-//         //     <h3>${item.title}</h3>
-//         //     <h4>${item.urlToImage}</h4>
-//         //     </li> 
-//             // ` 
-//         // })
-
-    // }
-    // console.log(html)
-    // })
-    // res.render('index', {
-    //     value: html
-    // })
-// })
 
 // MusicMatch Lyrics API
 

@@ -1,4 +1,5 @@
 // WEATHER API
+
 var city = 'Houston'
 var apiKey = '&&APIKEY=0312eb22f231c98c931a5137466c8e3f';
 var unitFahrenheit = '&&units=imperial';

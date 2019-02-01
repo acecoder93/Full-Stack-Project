@@ -1,3 +1,4 @@
+// TODO LIST WITH DATABASE FUNCTIONALITY
 
 $(function(){
 
@@ -41,7 +42,7 @@ $(function(){
                 toDo :  task   
             })
             .done(()=>{
-                console.log('this post does work');
+                console.log('Post Successful');
             })
             .catch(()=>{
                 console.log('error');

@@ -1,3 +1,5 @@
+/* This section contains the CSS written for general document */
+
 #mainBody { 
     background: url('https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -113,6 +115,7 @@ p {
     margin: 0 0 23px 0;
     } */
 
+
 /* THIS IS FOR THE SEARCH BAR */
 .search-container{
 width: 380px;
@@ -173,7 +176,8 @@ background-image: "http://www.endlessicons.com/wp-content/uploads/2012/12/search
     text-shadow: 1px 1px rgba(0, 0, 0, 0.589);
     opacity: 0.9;
 }
-/* END OF SEARCH BAR STUFF */
+/* END OF SEARCH BAR */
+
 
 /* Search bar for APIs */
 #youtubeQuery, #stockQuery {
@@ -199,7 +203,8 @@ background-image: "http://www.endlessicons.com/wp-content/uploads/2012/12/search
     text-align: center;
 }
 
-/* Lucid Logo */
+
+/* LUCID LOGO */
 
 #lucidLogo{
     display: block;
@@ -210,7 +215,8 @@ background-image: "http://www.endlessicons.com/wp-content/uploads/2012/12/search
 
 }
 
-/* Logout Button */
+/* LOGOUT BUTTON */
+
 #logoutbutton{
     opacity: 1; 
     font-family: 'Dosis', sans-serif;
@@ -233,7 +239,7 @@ background-image: "http://www.endlessicons.com/wp-content/uploads/2012/12/search
     background-color: #FAE17D;
 }
 
-/* Music Page */
+/* MUSIC PAGE */
 #musicPage{
     display: block;
     margin-left: auto;
