@@ -15,18 +15,18 @@
 <h2>Built With: </h2>
 <p>
     <ul>
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>Bootstrap4</li>
-        <li>jQuery</li>
-        <li>Passport Authentication (Local Strategy)</li>
-        <li>AWS (EC2 & RDS)</li>
-        <li>Node.js</li>
+        <li>HTML5 - develop structure of the website</li>
+        <li>CSS - design</li>
+        <li>Bootstrap4 - design and layout</li>
+        <li>jQuery - dynamically developed objects, pulled user information, utilized for API calls</li>
+        <li>Passport Authentication (Local Strategy) - to authenticate user and allow information to be stored for each other to develop a unique experience</li>
+        <li>AWS (EC2 & RDS) - to host the website and create relational database that was accessible for the group to work on </li>
+        <li>Node.js - used to setup the back-end structure of the website</li>
         <li>Express</li>
-        <li>RESTful APIs</li>
+        <li>RESTful APIs - variety of APIs were utilized for our dashboard</li>
         <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>Bash Scripting</li>
+        <li>Sequelize - ORM (object-relational mapping) to develop models and migrations </li>
+        <li>Bash Scripting - used to log scripts for sequelize and capture node packages</li>
     </ul>
 </p>
 
