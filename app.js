@@ -54,7 +54,7 @@ app.post('/register', (req, res) =>{
     })
 });
 
-// TODO in Progress
+// To-do in Progress
 app.post('/todo', (req,res)=>{
     console.log('check1')
     console.log("inside app: "  + req.body.toDo);
