@@ -6,7 +6,9 @@
 <br>
 
 <h2>Planning</h2>
-    <img src = "./Lucid_Planning.JPG" style = "width: 100px; height: 100px">
+    <img src = "./Lucid_Planning.JPG" style = "width: 75px; height: 75px">
+    <p> When we began planning out the features of what we would like to include in the dashboard, we listed out the requirements of the project. The key task at hand was to utilize an object-relational mapping (ORM) tool in conjunction with a database. This would allow us to store information for users. With that said, we began to sketch the features and tables that would be required to store the data. Since we were developing a landing page, we began to do research of what APIs we could implement. The purpose of this dashboard is to centralize information for a user.
+    </p>
     
 <h2>Running Tests</h2>
 
