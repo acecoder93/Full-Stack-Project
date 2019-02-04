@@ -5,7 +5,8 @@
     </p>
 <br>
 
-<h2>Features</h2>
+<h2>Planning</h2>
+    <img src = "/public/images/Lucid_Planning.jpg" style = "width: 100px; height: 100px">
     
 <h2>Running Tests</h2>
 
