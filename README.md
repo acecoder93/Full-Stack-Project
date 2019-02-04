@@ -6,7 +6,7 @@
 <br>
 
 <h2>Planning</h2>
-    <img src = "Full-Stack-Project/public/images/Lucid_Planning.JPG" style = "width: 100px; height: 100px">
+    <img src = "Lucid_Planning.JPG" style = "width: 100px; height: 100px">
     
 <h2>Running Tests</h2>
 
