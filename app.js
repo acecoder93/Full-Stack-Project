@@ -20,7 +20,7 @@ var bcrypt = require('bcryptjs');
 var Sequelize = require('sequelize');
 var SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-// Middleware›
+// Middleware› 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
@@ -151,5 +151,8 @@ app.use(require('./routes/google'));
 
 // Server Listening on Port 5000
 app.listen(5000, () => {
-    console.log('Listening on port 5000');
+   console.log('Listening on port 5000');
 });
+
+
+
